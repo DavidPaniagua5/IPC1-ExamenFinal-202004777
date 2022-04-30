@@ -41,6 +41,27 @@ public class Main {
     }
 
     public static void Piramide() {
+        int num = 0;
+        System.out.println("Ingrese un número primo:");
+        num = scanner.nextInt();
+       if(num%2 == 0){
+        System.out.println("Ingrese un número primo");
+        Piramide();   
+       }else{
+          for(int altura = 1; altura<=num; altura++){
+            //Espacios en blanco
+            for(int blancos = 1; blancos<=num-altura; blancos++){
+                System.out.print(" ");
+            }
+ 
+            //Asteriscos
+            for(int asteriscos=1; asteriscos<=(altura*2)-1; asteriscos++){
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+       }
+            
         
     }
     
